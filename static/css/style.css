@@ -1,0 +1,24 @@
+/* تصميم مخصص للموقع */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  direction: rtl;
+  text-align: right;
+}
+
+h1, h2, h3 {
+  color: #1f2937; /* رمادي غامق */
+}
+
+.btn-primary {
+  background-color: #10b981;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+}

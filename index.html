@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}
+الرئيسية – قل وداعاً لأخطاء الطباعة
+{% endblock %}
+
+{% block description %}
+متخصصون في تجهيز ملفات الطباعة السلك سكرين. دقة الألوان وسرعة التسليم هي ضماننا لنجاح طباعتك.
+{% endblock %}
+
+{% block content %}
+<header class="bg-white py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h1 
+            data-aos="fade-up" 
+            class="text-4xl sm:text-6xl font-extrabold text-gray-900 leading-tight mb-4"
+        >
+            قل وداعاً لأخطاء الطباعة: 
+            <span class="text-emerald-600">فصل ألوان مضمون 100%</span>
+        </h1>
+        
+        <p 
+            data-aos="fade-up" data-aos-delay="100" 
+            class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto"
+        >
+            متخصصون في تجهيز الملفات بتقنيات Spot, Index, CMYK, Discharge. دقة الألوان وسرعة التسليم هي ضماننا لنجاح طباعتك السلك سكرين.
+        </p>
+        
+        <div 
+            data-aos="fade-up" data-aos-delay="200" 
+            class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 sm:space-x-reverse"
+        >
+            <a 
+                href="{{ url_for('portfolio') }}" 
+                class="bg-emerald-500 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:bg-emerald-600 transition duration-300"
+            >
+                شاهد أعمالنا (المعرض)
+            </a>
+            <a 
+                href="tel:+01126212452" 
+                class="bg-gray-700 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:bg-gray-800 transition duration-300"
+            >
+                اطلب الآن: 01126212452
+            </a>
+        </div>
+    </div>
+</header>
+
+<section id="features" class="container mx-auto px-4 my-16 sm:my-24">
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12" data-aos="fade-up">
+        لماذا تختار خدماتنا؟
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-emerald-500" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">أداء وسرعة قياسية</h3>
+            <p class="text-gray-600">نضمن تسليم الملفات النهائية خلال 12 ساعة كحد أقصى.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-emerald-500" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">دقة وتطابق 100%</h3>
+            <p class="text-gray-600">ملفات مُحسّنة مسبقًا لإعدادات طباعة السلك سكرين.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-xl border-t-4 border-emerald-500" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">استشارات مجانية</h3>
+            <p class="text-gray-600">نقدم توجيهات فنية حول اختيار نوع الفصل الأمثل لنتيجتك.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

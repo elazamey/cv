@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}الرئيسية – العزّامي{% endblock %}
+
+{% block description %}
+فصل ألوان احترافي للطباعة سلك سكرين – Spot, Index, CMYK, Discharge – دقة وسرعة تسليم خلال 12 ساعة.
+{% endblock %}
+
+{% block head %}
+<!-- مكتبة Three.js للنموذج ثلاثي الأبعاد -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f9fafb;
+  }
+  .btn-primary-custom {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: #10b981;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- ✅ الهيدر -->
+<header class="bg-white py-16 border-b border-gray-200 text-center">
+  <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
+    قل وداعاً لأخطاء الطباعة: <span class="text-emerald-600">فصل ألوان مضمون 100%</span>
+  </h1>
+  <p class="text-xl text-gray-600 mb-8">
+    Spot, Index, CMYK, Discharge – دقة وسرعة تسليم خلال 12 ساعة
+  </p>
+  <a href="/contact" class="bg-emerald-500 text-white px-8 py-3 rounded-xl btn-primary-custom">
+    اطلب فصل ألوانك الآن
+  </a>
+</header>
+
+<!-- ✅ أقسام إضافية (اختياري) -->
+<section id="portfolio" class="py-20 text-center">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6">📁 المعرض</h2>
+  <p class="text-gray-600">شاهد نماذج من أعمال فصل الألوان على مختلف أنواع الأقمشة.</p>
+</section>
+
+<section id="services" class="py-20 text-center bg-gray-50">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6">🛠️ الخدمات</h2>
+  <p class="text-gray-600">فصل Spot، Index، CMYK، Discharge – حسب نوع التصميم والقماش.</p>
+</section>
+
+<section id="process" class="py-20 text-center">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6">⚙️ آلية العمل</h2>
+  <p class="text-gray-600">ترسل التصميم، نحدد نوع الفصل المناسب، وتستلم الملفات خلال ساعات.</p>
+</section>
+
+<section id="contact" class="py-20 text-center bg-gray-50">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6">📞 تواصل معنا</h2>
+  <p class="text-gray-600 mb-4">للطلب أو الاستفسار، استخدم النموذج أو واتساب مباشرة.</p>
+  <a href="/contact" class="bg-emerald-500 text-white px-6 py-3 rounded-xl btn-primary-custom">فتح صفحة التواصل</a>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.getElementById('mobile-menu-button')?.addEventListener('click', function () {
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+</script>
+{% endblock %}

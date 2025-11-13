@@ -1,0 +1,74 @@
+﻿{% extends "base.html" %}
+
+{% block title %}من أنا – العزّامي{% endblock %}
+
+{% block description %}
+تعرف على العزّامي، مصمم الجرافيك المتخصص في فصل الألوان للطباعة السلك سكرين، خبرة تضمن لك أفضل النتائج.
+{% endblock %}
+
+{% block content %}
+<section class="bg-gray-50 py-16 sm:py-24">
+    <div class="container mx-auto px-4 text-center">
+        <h1 
+            class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-8"
+            data-aos="fade-up"
+        >
+            مرحباً بك، أنا العزّامي.
+        </h1>
+        
+        <p 
+            class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto"
+            data-aos="fade-up" data-aos-delay="100"
+        >
+            مصمم جرافيك مصري متخصص في فن فصل الألوان الدقيق للطباعة السلك سكرين. 
+            أجمع بين الشغف بالتصميم والخبرة الفنية لتقديم نتائج لا مثيل لها.
+        </p>
+
+        <div 
+            class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-6 md:p-10 border border-gray-100"
+            data-aos="fade-zoom-in" data-aos-delay="200"
+        >
+            <div class="flex flex-col md:flex-row items-center md:items-start text-center md:text-right gap-8">
+                <div class="flex-shrink-0">
+                    <img 
+                        src="{{ url_for('static', filename='images/elazamey_profile.jpg') }}" 
+                        alt="صورة العزّامي" 
+                        class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-emerald-500 mx-auto md:mx-0"
+                    >
+                </div>
+                <div class="flex-grow">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">خبرة تمتد لسنوات</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        بصفتي "Egyptian Designer"، كرّست سنوات طويلة لإتقان أدق تفاصيل فصل الألوان، 
+                        من Spot Color إلى Index و CMYK المعقدة، بالإضافة إلى تقنيات مثل Discharge. 
+                        أؤمن بأن كل تصميم يستحق أن يرى النور بأفضل جودة ممكنة على القماش.
+                    </p>
+                    <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
+                        <span class="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">فصل ألوان Spot</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">Index Color</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">CMYK Process</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">Discharge Prints</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-sm font-medium px-3 py-1 rounded-full">Mockup Design</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-10 pt-8 border-t border-gray-200 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">تواصل معي</h3>
+                <p class="text-gray-700 mb-4">
+                    إذا كنت تبحث عن دقة لا تساوم عليها في طباعة السلك سكرين، فلا تتردد في التواصل.
+                </p>
+                <a 
+                    href="https://wa.me/+201126212452" 
+                    target="_blank" 
+                    class="inline-flex items-center bg-emerald-600 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:bg-emerald-700 transition duration-300"
+                >
+                    <svg class="w-6 h-6 ml-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.557-3.84-1.557-5.892 0-6.556 5.338-11.894 11.893-11.894 3.109 0 6.01 1.244 8.165 3.481 2.156 2.238 3.391 5.176 3.391 8.396 0 6.557-5.338 11.894-11.893 11.894-1.99 0-3.928-.5-5.688-1.448l-6.326 1.654zm1.89-6.953l.366 1.135 5.334-1.393c1.789.972 3.845 1.488 5.992 1.488 5.456 0 9.9-4.444 9.9-9.9 0-2.618-1.01-5.109-2.805-6.969-1.795-1.86-4.285-2.879-6.903-2.879-5.455 0-9.9 4.444-9.9 9.9 0 1.63.4 3.235 1.146 4.673zm5.006-3.805c-.156-.093-.418-.21-.595-.278-.178-.069-.387-.01-.587.279-.201.289-.766.974-.937 1.176-.17.201-.341.229-.63.076-.288-.153-1.218-.445-2.324-1.432-1.287-1.127-2.15-2.833-2.409-3.26-.258-.426-.027-.66-.173-.805-.147-.145-.34-.349-.495-.529-.156-.179-.007-.333.136-.63l.418-.946c.143-.324.084-.606-.027-.852-.11-.247-.98-.902-1.341-1.238-.36-.337-.308-.283-.52-.283-.212 0-.455-.03-.698-.03-.243 0-.63.093-.964.444-.334.35-.918.9-.918 2.193 0 1.293.94 2.535 1.076 2.723.135.19.083.376-.056.671-.137.294-.275.567-.409.81-.136.242-2.583 4.207-2.583 5.483 0 1.277 2.651 2.217 2.766 2.304.115.088 4.234 2.67 4.348 2.67.114 0 .918.158 1.543.158.625 0 1.789-.663 2.05-.133.262.53 1.815 1.849 2.072 1.849.256 0 .42-.142.56-.252.14-.112.914-.582 1.04-.863.125-.282.084-.52-.047-.732-.13-.21-.318-.492-.445-.694z"/></svg>
+                    WhatsApp: 01126212452
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

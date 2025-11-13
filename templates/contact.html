@@ -1,0 +1,59 @@
+﻿{% extends "base.html" %}
+
+{% block title %}تواصل – العزّامي{% endblock %}
+
+{% block description %}
+اطلب خدمة فصل ألوان عبر النموذج السريع – Spot, Index, CMYK, Discharge – تواصل معنا مباشرة عبر واتساب.
+{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">📞 طلب خدمة فصل ألوان</h2>
+
+  <form id="whatsappForm" class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- الاسم -->
+    <div>
+      <label for="name" class="block mb-2 text-gray-700 font-medium">اسمك</label>
+      <input type="text" id="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="محمد أحمد" required>
+    </div>
+
+    <!-- نوع الفصل -->
+    <div>
+      <label for="type" class="block mb-2 text-gray-700 font-medium">نوع الفصل المطلوب</label>
+      <select id="type" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500" required>
+        <option value="">اختر نوع الفصل</option>
+        <option value="Spot">Spot</option>
+        <option value="Index">Index</option>
+        <option value="CMYK">CMYK</option>
+        <option value="Discharge">Discharge</option>
+      </select>
+    </div>
+
+    <!-- رفع ملف -->
+    <div class="md:col-span-2">
+      <label for="file" class="block mb-2 text-gray-700 font-medium">ارفع صورة التصميم (اختياري)</label>
+      <input type="file" id="file" class="w-full border border-gray-300 rounded-lg px-4 py-2">
+    </div>
+
+    <!-- زر الإرسال -->
+    <div class="md:col-span-2 text-center mt-6">
+      <button type="submit" class="bg-emerald-500 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-md hover:bg-emerald-600 transition">
+        إرسال عبر واتساب
+      </button>
+    </div>
+  </form>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const type = document.getElementById('type').value;
+    const message = `مرحبًا، أنا ${name} وأرغب في خدمة فصل ألوان من نوع ${type}.`;
+    const whatsappLink = `https://wa.me/201234567890?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
+  });
+</script>
+{% endblock %}

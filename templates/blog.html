@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}مدونة العزّامي – فصل ألوان وطباعة{% endblock %}
+
+{% block description %}
+مقالات ونصائح في فصل الألوان للطباعة سلك سكرين – Spot, Index, CMYK, Discharge – دليل عملي للمصممين.
+{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">📚 مدونة العزّامي</h2>
+
+  <!-- المقال 1 -->
+  <article class="mb-10 bg-white p-6 rounded-xl shadow-md border border-gray-200">
+    <h3 class="text-xl font-semibold text-emerald-600 mb-2">ما الفرق بين Spot وCMYK؟</h3>
+    <p class="text-gray-700 leading-relaxed">
+      فصل Spot يعتمد على ألوان مسطحة محددة، مثالي للشعارات والتصاميم البسيطة.  
+      أما CMYK فهو فصل رباعي الألوان يستخدم للطباعة الواقعية والصور الفوتوغرافية.
+    </p>
+  </article>
+
+  <!-- المقال 2 -->
+  <article class="mb-10 bg-white p-6 rounded-xl shadow-md border border-gray-200">
+    <h3 class="text-xl font-semibold text-emerald-600 mb-2">كيف تختار نوع الفصل المناسب لتصميمك؟</h3>
+    <p class="text-gray-700 leading-relaxed">
+      لو التصميم فيه تدرجات وصورة، استخدم CMYK أو Index.  
+      لو شعار أو رسم بسيط، Spot هو الأفضل.  
+      ولو عايز طباعة ناعمة على قماش داكن، اختار Discharge.
+    </p>
+  </article>
+
+  <!-- المقال 3 -->
+  <article class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+    <h3 class="text-xl font-semibold text-emerald-600 mb-2">أخطاء شائعة في فصل الألوان</h3>
+    <ul class="list-disc pr-6 text-gray-700 leading-relaxed">
+      <li>استخدام CMYK لتصاميم شعارات – النتيجة بتكون باهتة</li>
+      <li>عدم ضبط حجم التصميم حسب المقاس النهائي للطباعة</li>
+      <li>نسيان تضمين Mockup للعميل قبل الطباعة</li>
+    </ul>
+  </article>
+</section>
+{% endblock %}

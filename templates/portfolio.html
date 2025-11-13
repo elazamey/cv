@@ -1,0 +1,73 @@
+﻿{% extends "base.html" %}
+
+{% block title %}معرض الأعمال – العزّامي{% endblock %}
+
+{% block description %}
+نماذج من أعمال فصل الألوان: Spot, Index, CMYK – نتائج احترافية على أنواع مختلفة من الأقمشة.
+{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-16">
+  <h2 
+    class="text-3xl font-bold text-center text-gray-800 mb-12"
+    data-aos="fade-up"
+  >
+    🎨 نماذج من أعمالي
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    <div 
+      class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200" 
+      data-aos="fade-up" data-aos-delay="100"
+    >
+      <img 
+        src="{{ url_for('static', filename='images/1.jpg') }}" 
+        alt="CMYK فصل ألوان" 
+        class="w-full h-64 object-cover"
+      >
+      <div class="p-4 text-center">
+        <p class="text-gray-800 font-semibold">CMYK – 6 ألوان – قطن أبيض</p>
+      </div>
+    </div>
+
+    <div 
+      class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200"
+      data-aos="fade-up" data-aos-delay="200"
+    >
+      <img 
+        src="{{ url_for('static', filename='images/2.jpg') }}" 
+        alt="Spot Separation" 
+        class="w-full h-64 object-cover"
+      >
+      <div class="p-4 text-center">
+        <p class="text-gray-800 font-semibold">Spot – 4 ألوان – تيشيرت أسود</p>
+      </div>
+    </div>
+
+    <div 
+      class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200"
+      data-aos="fade-up" data-aos-delay="300"
+    >
+      <img 
+        src="{{ url_for('static', filename='images/3.jpg') }}" 
+        alt="Index Separation" 
+        class="w-full h-64 object-cover"
+      >
+      <div class="p-4 text-center">
+        <p class="text-gray-800 font-semibold">Index – 5 ألوان – قماش بوليستر</p>
+      </div>
+    </div>
+    
+    </div>
+
+  <div class="text-center mt-12" data-aos="fade-up">
+    <a 
+      href="{{ url_for('contact') }}" 
+      class="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-md hover:bg-emerald-600 transition"
+    >
+      اطلب فصل مشابه الآن
+    </a>
+  </div>
+</section>
+{% endblock %}

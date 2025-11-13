@@ -1,0 +1,22 @@
+{
+  "short_name": "العزّامي",
+  "name": "العزّامي – فصل ألوان احترافي",
+  "description": "خدمة فصل ألوان احترافية للطباعة السلك سكرين بتقنيات Spot, Index, CMYK, Discharge.",
+  "icons": [
+    {
+      "src": "/static/images/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/images/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#10b981"
+}

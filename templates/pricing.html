@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}الأسعار – العزّامي{% endblock %}
+
+{% block description %}
+تعرف على أسعار خدمات فصل الألوان للطباعة سلك سكرين: Spot, Index, CMYK, Discharge – تسليم سريع وجودة عالية.
+{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-16">
+  <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center">💰 قائمة الأسعار</h1>
+
+  <div class="overflow-x-auto">
+    <table class="table-auto w-full text-gray-700 border border-gray-300 rounded-xl overflow-hidden">
+      <thead class="bg-emerald-100 text-gray-900 font-semibold">
+        <tr>
+          <th class="px-4 py-3">نوع الفصل</th>
+          <th class="px-4 py-3">السعر</th>
+          <th class="px-4 py-3">المدة</th>
+          <th class="px-4 py-3">ملاحظات</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white">
+        <tr class="border-t">
+          <td class="px-4 py-3">Spot</td>
+          <td class="px-4 py-3">$30</td>
+          <td class="px-4 py-3">6 ساعات</td>
+          <td class="px-4 py-3">يشمل Mockup</td>
+        </tr>
+        <tr class="border-t">
+          <td class="px-4 py-3">Index</td>
+          <td class="px-4 py-3">$40</td>
+          <td class="px-4 py-3">8 ساعات</td>
+          <td class="px-4 py-3">حتى 6 ألوان</td>
+        </tr>
+        <tr class="border-t">
+          <td class="px-4 py-3">CMYK</td>
+          <td class="px-4 py-3">$50</td>
+          <td class="px-4 py-3">12 ساعة</td>
+          <td class="px-4 py-3">يشمل Underbase</td>
+        </tr>
+        <tr class="border-t">
+          <td class="px-4 py-3">Discharge</td>
+          <td class="px-4 py-3">$45</td>
+          <td class="px-4 py-3">10 ساعات</td>
+          <td class="px-4 py-3">للقطن الداكن فقط</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="text-center mt-12">
+    <a href="/contact" class="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-md hover:bg-emerald-600 transition">
+      اطلب استشارتك المجانية الآن
+    </a>
+  </div>
+</section>
+{% endblock %}

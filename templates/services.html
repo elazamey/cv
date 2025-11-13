@@ -1,0 +1,46 @@
+﻿{% extends "base.html" %}
+
+{% block title %}الخدمات – العزّامي{% endblock %}
+
+{% block description %}
+خدمات فصل ألوان احترافية للطباعة سلك سكرين: Spot, Index, CMYK, Discharge – دقة وسرعة تسليم.
+{% endblock %}
+
+{% block content %}
+<section class="container mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">الخدمات المتاحة</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- خدمة Spot -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-emerald-600 mb-2">🎯 فصل Spot</h3>
+      <p class="text-gray-700">فصل يدوي دقيق للألوان المسطحة – مثالي للتصاميم البسيطة والشعارات – عدد ألوان أقل، طباعة أوضح.</p>
+    </div>
+
+    <!-- خدمة Index -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-emerald-600 mb-2">🎨 فصل Index</h3>
+      <p class="text-gray-700">تحويل الصور لتدرجات نقطية – مناسب للرسومات المعقدة – نتائج ممتازة على التيشيرتات الداكنة.</p>
+    </div>
+
+    <!-- خدمة CMYK -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-emerald-600 mb-2">🌈 فصل CMYK</h3>
+      <p class="text-gray-700">فصل رباعي الألوان للطباعة الواقعية – مثالي للصور الفوتوغرافية – دقة عالية وتدرج لوني ممتاز.</p>
+    </div>
+
+    <!-- خدمة Discharge -->
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-emerald-600 mb-2">🔥 فصل Discharge</h3>
+      <p class="text-gray-700">فصل خاص للطباعة الناعمة على القطن الداكن – بدون ملمس – مظهر احترافي فاخر.</p>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-12">
+    <a href="/contact" class="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-3 rounded-xl shadow-md hover:bg-emerald-600 transition">
+      احجز خدمتك الآن
+    </a>
+  </div>
+</section>
+{% endblock %}
